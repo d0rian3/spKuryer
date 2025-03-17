@@ -1,0 +1,144 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 100px;
+}
+.articleHeader {
+  display: flex;
+  gap: 50px;
+}
+.articleTextSections {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  align-self: center;
+  .mainText {
+    margin: 30px 0px;
+    line-height: 1.6;
+    font-size: 20px;
+  }
+  .contactusText {
+    margin: 40px 0px 20px 0px;
+    font-size: 23px;
+  }
+
+  h1 {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+}
+
+.articleImageSections {
+  max-width: 600px;
+  text-align: end;
+
+  object-fit: contain;
+
+  img {
+    width: 600px;
+    height: 400px;
+
+    transform: scaleX(-1);
+    object-fit: cover;
+    border-radius: 0px 50px 0px 50px;
+    margin-bottom: 00px;
+  }
+  .numberText {
+    font-weight: bold;
+    align-self: flex-end;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .articleHeader {
+    flex-direction: column;
+  }
+}
+@media (max-width: 770px) {
+  .articleHeader {
+    flex-wrap: wrap;
+  }
+  .articleTextSections {
+    h1 {
+      font-size: 30px;
+    }
+    .mainText {
+      font-size: 17px !important;
+    }
+    .contactusText {
+      font-size: 17px;
+    }
+  }
+  .articleImageSections {
+    img {
+      width: 500px;
+    }
+  }
+}
+@media (max-width: 670px) {
+  header {
+    padding: 60px 30px;
+  }
+  .articleImageSections {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    img {
+      width: 350px;
+    }
+  }
+  .articleTextSections {
+    h1 {
+      font-size: 20px;
+    }
+    .mainText {
+      font-size: 13px !important;
+    }
+    .contactusText {
+      font-size: 15px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .articleImageSections {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    img {
+      width: 300px;
+    }
+  }
+  .articleTextSections {
+    h1 {
+      font-size: 17px;
+    }
+    .mainText {
+      font-size: 13px !important;
+    }
+    .contactusText {
+      font-size: 12px;
+    }
+  }
+}
+@media (max-width: 360px) {
+  .articleImageSections {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    img {
+      width: 250px;
+    }
+  }
+  .articleTextSections {
+    h1 {
+      font-size: 17px;
+    }
+    .mainText {
+      font-size: 13px !important;
+    }
+    .contactusText {
+      font-size: 12px;
+    }
+  }
+}
