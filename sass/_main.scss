@@ -273,8 +273,13 @@ main {
   display: none;
   margin-left: 50px;
   transition: 300ms;
+
   li {
+    margin-top: 10px;
     list-style: disc;
+  }
+  li:last-child {
+    line-height: 2;
   }
 }
 #gallery {

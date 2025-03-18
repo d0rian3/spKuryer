@@ -790,7 +790,11 @@ main {
   transition: 300ms;
 }
 .WhatWeDoDesc li {
+  margin-top: 10px;
   list-style: disc;
+}
+.WhatWeDoDesc li:last-child {
+  line-height: 2;
 }
 
 #gallery {
